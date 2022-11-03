@@ -1,0 +1,19 @@
+name: 'actions-image-tags'
+description: 'Image tags helper'
+author: 'PeterHallgato'
+branding:
+  color: 'blue'
+  icon: 'tag'
+inputs:
+  image_tag_prefix:
+    description: "Add prefix to image tag"
+    required: false
+  image_tag_suffix:
+    description: "Add suffix to image tag"
+    required: false
+  is_add_short_commit_hash:
+    description: "Add short commit hash to image tag"
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
