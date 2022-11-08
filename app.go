@@ -35,5 +35,7 @@ func main() {
 	}
 
 	githubactions.SetEnv("SHORT_COMMIT_HASH", shortCommitHash)
+	githubactions.SetOutput("shortCommitHash", shortCommitHash)
 	githubactions.SetEnv("IMAGE_TAG", imageTag)
+	githubactions.SetOutput("imageTag", imageTag)
 }
