@@ -1,6 +1,6 @@
-ARG REGISTRY=harbor.budapest.hu/docker-hub # docker.io/library
+ARG REGISTRY=/
 
-FROM ${REGISTRY}/golang:1.19
+FROM ${REGISTRY}golang:1.19
 
 WORKDIR /usr/src/app
 
